@@ -8,8 +8,8 @@
 
 -->
 <manifest>
-  <remote fetch="https://git.rtems.org/rtems" name="kernel"/>
-  <remote fetch="https://git.rtems.org/rtems-source-builder" name="rsb"/>
+  <remote fetch="git://git.rtems.org/rtems" name="kernel"/>
+  <remote fetch="git://git.rtems.org/rtems-source-builder" name="rsb"/>
   <remote fetch="https://github.com/matthew-renodin" name="mrenodin"/>
 
   <project name="kernel" remote="kernel" path="kernel" revision="master" />
