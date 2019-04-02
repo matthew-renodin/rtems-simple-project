@@ -12,8 +12,8 @@
   <remote fetch="https://git.rtems.org/rtems-source-builder" name="rsb"/>
   <remote fetch="https://github.com/matthew-renodin" name="mrenodin"/>
 
-  <project name="kernel" remote="kernel" path="kernel" upstream="master" />
-  <project name="rsb" remote="rsb" path="rsb" upstream="master" />
+  <project name="kernel" remote="kernel" path="kernel" revision="master" />
+  <project name="rsb" remote="rsb" path="rsb" revision="master" />
   <project name="rtems-helper.git" remote="mrenodin" path="tools/rtems-helper" upstream="master">
       <linkfile dest="init-build.sh" src="init-build.sh"/>
   </project>
