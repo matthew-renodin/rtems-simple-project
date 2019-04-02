@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright 2019, Matthew Renodin
+
+     This software may be distributed and modified according to the terms of
+     the MIT license. Note that NO WARRANTY is provided.
+     See "LICENSE" for details.
+
+-->
+<manifest>
+  <remote fetch="https://git.rtems.org/rtems" name="kernel"/>
+  <remote fetch="https://git.rtems.org/rtems-source-builder" name="rsb"/>
+  <remote fetch="https://github.com/matthew-renodin" name="mrenodin"/>
+
+  <remote fetch="https://github.com/sel4proj" name="sel4proj"/>
+
+  <default remote="mrenodin" revision="master"/>
+  <!-- added above libraries to support camkes -->
+  <project name="rtems-helper.git" path="tools/rtems-helper" upstream="master">
+      <linkfile dest="init-build.sh" src="init-build.sh"/>
+  </project>
+  <project name="modules.git" path="projects/modules" remote="mrenodin" revision="master" upstream="master"/>
+</manifest>
