@@ -15,9 +15,8 @@
   <remote fetch="https://github.com/sel4proj" name="sel4proj"/>
 
   <default remote="mrenodin" revision="master"/>
-  <!-- added above libraries to support camkes -->
-  <project name="rtems-helper.git" path="tools/rtems-helper" upstream="master">
+  <!--project name="rtems-helper.git" path="tools/rtems-helper" upstream="master">
       <linkfile dest="init-build.sh" src="init-build.sh"/>
   </project>
-  <project name="modules.git" path="projects/modules" remote="mrenodin" revision="master" upstream="master"/>
+  <project name="modules.git" path="projects/modules" remote="mrenodin" revision="master" upstream="master"/-->
 </manifest>
