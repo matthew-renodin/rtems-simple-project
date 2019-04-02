@@ -10,7 +10,7 @@ You use this project by using Google Repo.
 https://gerrit.googlesource.com/git-repo/
 
 
-### Besides Google Repo this requires several programs to run build and run sel4 on qemu
+### Besides Google Repo this requires several programs to run build and run RTEMS on qemu
 
 
 This is some information I took from the Host Dependencies page on the RTEMS site:
@@ -24,7 +24,7 @@ sudo apt-get install python-dev python-pip
 sudo apt-get install libxml2-utils ncurses-dev
 sudo apt-get install curl git doxygen
 
-To build for ARM targets you will need a cross compiler. In addition, to run seL4 projects on a simulator you will need qemu. Installation of these additional base dependencies include running:
+To build for ARM targets you will need a cross compiler. In addition, to run RTEMS projects on a simulator you will need qemu. Installation of these additional base dependencies include running:
 
 sudo apt-get install gcc-arm-linux-gnueabi g++-arm-linux-gnueabi
 sudo apt-get install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
