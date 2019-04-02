@@ -8,14 +8,13 @@
 
 -->
 <manifest>
-  <remote fetch="git://git.rtems.org/rtems" name="kernel"/>
-  <remote fetch="git://git.rtems.org/rtems-source-builder" name="rsb"/>
+  <remote fetch="git://git.rtems.org" name="rtems"/>
   <remote fetch="https://github.com/matthew-renodin" name="mrenodin"/>
 
-  <project name="kernel" remote="kernel" path="kernel" revision="master" />
-  <project name="rsb" remote="rsb" path="rsb" revision="master" />
+  <project name="rtems.git" remote="rtems" path="kernel" revision="master" />
+  <project name="rtems-source-builder" remote="rtems" path="rsb" revision="master" />
   <project name="rtems-helper.git" remote="mrenodin" path="tools/rtems-helper" revision="master" upstream="master">
-      <linkfile dest="init-build.sh" src="init-build.sh"/>
+      <!--linkfile dest="init-build.sh" src="init-build.sh"/-->
   </project>
   <project name="modules.git" path="projects/modules" remote="mrenodin" revision="master" upstream="master"/>
 </manifest>
