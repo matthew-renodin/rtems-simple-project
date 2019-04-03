@@ -14,7 +14,7 @@
   <project name="rtems.git" remote="rtems" path="kernel" revision="master" />
   <project name="rtems-source-builder" remote="rtems" path="rsb" revision="master" />
   <project name="rtems-helper.git" remote="mrenodin" path="tools/rtems-helper" revision="master" upstream="master">
-      <!--linkfile dest="init-build.sh" src="init-build.sh"/-->
+      <linkfile dest="init-build.sh" src="init-build.sh"/>
   </project>
   <project name="modules.git" path="projects/modules" remote="mrenodin" revision="master" upstream="master"/>
 </manifest>
