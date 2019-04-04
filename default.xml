@@ -10,6 +10,7 @@
 <manifest>
   <remote fetch="git://git.rtems.org" name="rtems"/>
   <remote fetch="https://github.com/matthew-renodin" name="mrenodin"/>
+  <remote fetch="https://github.com/DOCGroup" name="docgroup"/>
 
   <project name="rtems.git" remote="rtems" path="kernel" revision="master" />
   <project name="rtems-source-builder" remote="rtems" path="rsb" revision="master" />
@@ -17,5 +18,15 @@
       <linkfile dest="init-build.sh" src="init-build.sh"/>
       <linkfile dest="init-rtems.sh" src="init-rtems.sh"/>
   </project>
+  <project name="MPC.git" remote="docgroup" path="projects/MPC" revision="master" />   
+  <project name="ACE_TAO.git" remote="mrenodin" path="projects/ACE_TAO" revision="master" />  
+  <project name="ACE-TAO-RTEMS-installer.git" remote="mrenodin" path="projects/ACE-TAO-RTEMS-installer" revision="master" />  
+  <project name="ACE-TAO-mingw-installer.git" remote="mrenodin" path="projects/ACE-TAO-mingw-installer" revision="master" />  
+     
+  <project name="" remote="ace-tao" path="projects/ACE-TAO" revision="master" upstream="master">
+      <linkfile dest="init-build.sh" src="init-build.sh"/>
+      <linkfile dest="init-acetao.sh" src="init-acetao.sh"/>
+      <linkfile dest="init-rtems.sh" src="init-rtems.sh"/>
+  </project>   
   <project name="modules.git" path="projects/modules" remote="mrenodin" revision="master" upstream="master"/>
 </manifest>
