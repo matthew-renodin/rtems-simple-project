@@ -16,6 +16,7 @@
   <project name="rtems-source-builder" remote="rtems" path="rsb" revision="master" />
   <project name="rtems-helper.git" remote="mrenodin" path="tools/rtems-helper" revision="master" upstream="master">
       <linkfile dest="init-build.sh" src="init-build.sh"/>
+      <linkfile dest="init-acetao.sh" src="init-acetao.sh"/>
       <linkfile dest="init-rtems.sh" src="init-rtems.sh"/>
   </project>
   <project name="MPC.git" remote="docgroup" path="projects/MPC" revision="master" />   
@@ -23,10 +24,6 @@
   <project name="ACE-TAO-RTEMS-installer.git" remote="mrenodin" path="projects/ACE-TAO-RTEMS-installer" revision="master" />  
   <project name="ACE-TAO-mingw-installer.git" remote="mrenodin" path="projects/ACE-TAO-mingw-installer" revision="master" />  
      
-  <project name="" remote="ace-tao" path="projects/ACE-TAO" revision="master" upstream="master">
-      <linkfile dest="init-build.sh" src="init-build.sh"/>
-      <linkfile dest="init-acetao.sh" src="init-acetao.sh"/>
-      <linkfile dest="init-rtems.sh" src="init-rtems.sh"/>
-  </project>   
+
   <project name="modules.git" path="projects/modules" remote="mrenodin" revision="master" upstream="master"/>
 </manifest>
