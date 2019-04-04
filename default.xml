@@ -9,8 +9,8 @@
 -->
 <manifest>
   <remote fetch="git://git.rtems.org" name="rtems"/>
-  <remote fetch="https://github.com/matthew-renodin" name="mrenodin"/>
-  <remote fetch="https://github.com/DOCGroup" name="docgroup"/>
+  <remote fetch="git://github.com/matthew-renodin" name="mrenodin"/>
+  <remote fetch="git://github.com/DOCGroup" name="docgroup"/>
 
   <project name="rtems.git" remote="rtems" path="kernel" revision="master" />
   <project name="rtems-source-builder" remote="rtems" path="rsb" revision="master" />
